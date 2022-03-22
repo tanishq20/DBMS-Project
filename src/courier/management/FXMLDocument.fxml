@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="courier.management.FXMLDocumentController">
+   <top>
+      <AnchorPane prefHeight="105.0" prefWidth="757.0">
+         <children>
+            <AnchorPane layoutX="40.0" layoutY="-12.0" prefHeight="176.0" prefWidth="757.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label id="toggle" alignment="CENTER" prefHeight="105.0" prefWidth="757.0" text="Courier  Servise System" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5444444020589192" centerY="0.9650793711344401" cycleMethod="REPEAT" focusAngle="-114.29" focusDistance="-0.10852716135424223" radius="0.465116264284119">
+                           <stops>
+                              <Stop color="#162d7b" />
+                              <Stop color="#331a41" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <VBox id="toggle" prefHeight="545.0" prefWidth="176.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToggleButton id="btn" fx:id="setCourierSceneBtn" mnemonicParsing="false" onAction="#btnSetCourierScene" prefHeight="60.0" prefWidth="176.0" stylesheets="@button.css" text="Couriers" textFill="#422c4e">
+               <toggleGroup>
+                  <ToggleGroup fx:id="g1" />
+               </toggleGroup>
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </ToggleButton>
+            <Label />
+            <ToggleButton id="btn" fx:id="setStaffSceneBtn" mnemonicParsing="false" onAction="#btnSetStaffScene" prefHeight="58.0" prefWidth="176.0" stylesheets="@button.css" text="Staff" toggleGroup="$g1">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </ToggleButton>
+            <Label />
+            <ToggleButton id="btn" fx:id="setSheduleSceneBtn" mnemonicParsing="false" onAction="#btnSetSheduleScene" prefHeight="58.0" prefWidth="176.0" stylesheets="@button.css" text="Shedule" toggleGroup="$g1">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </ToggleButton>
+            <Label />
+            <ToggleButton id="btn" fx:id="setDeliverySceneBtn" mnemonicParsing="false" onAction="#btnSetDeliveryScene" prefHeight="58.0" prefWidth="176.0" stylesheets="@button.css" text="Delivery" toggleGroup="$g1">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </ToggleButton>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

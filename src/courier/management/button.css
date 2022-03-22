@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 Nov, 2017, 7:22:30 PM
+    Author     : tanzeem
+*/
+#btn {
+    -fx-background-color: 
+        #000000,
+        linear-gradient(#4c1b64, #270b35),
+        linear-gradient(#543166, #371b45),
+        linear-gradient(#422c4e, #25122e);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+#btn Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#btn:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #543166 0%, #2f4b8f 100%),
+        #395cab,
+        #223768,
+        radial-gradient(center 50% 50%, radius 100%, #25122e, #263e75);
+}
+#btn:selected {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2f4b8f 0%, #543166 100%),
+        #223768,
+        #395cab,
+        radial-gradient(center 50% 50%, radius 100%, #263e75, #25122e);
+}
+#btn:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+#toggle {
+    
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #263e75 0%, #426ab7 100%),
+        #223768,
+        #395cab,
+        radial-gradient(center 50% 50%, radius 100%, #2f4b8f, #7ebcea);
+}

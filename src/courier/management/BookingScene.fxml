@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="565.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="courier.management.BookingSceneController">
+   <children>
+      <VBox layoutY="-1.0" prefHeight="456.0" prefWidth="575.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane id="btn" prefHeight="292.0" prefWidth="650.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.66665649414062" minWidth="10.0" prefWidth="83.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="134.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="107.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="106.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.33331298828125" minWidth="10.0" prefWidth="108.66668701171875" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="189.33331298828125" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="38.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label id="toggle" alignment="CENTER" prefHeight="52.0" prefWidth="408.0" style="-fx-background-color: #456565;" text="Booking Detalis" textFill="WHITE" GridPane.columnSpan="4">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="319.0" text="Amount :" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="319.0" text="Address :" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="319.0" text="Name :" GridPane.rowIndex="3" />
+                  <TextField fx:id="courAmount" prefHeight="44.0" prefWidth="209.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="319.0" text=" Courier Weight :" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="319.0" text="Courier Type :" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="319.0" text="Pin Code :" GridPane.rowIndex="5" />
+                  <TextField fx:id="toName" prefHeight="44.0" prefWidth="209.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="toAdrs" prefHeight="44.0" prefWidth="209.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="toPin" prefHeight="44.0" prefWidth="209.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="courWeight" prefHeight="44.0" prefWidth="209.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <TextField fx:id="courType" prefHeight="44.0" prefWidth="209.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <TextField fx:id="fromName" prefHeight="44.0" prefWidth="209.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <TextField fx:id="fromAdrs" prefHeight="44.0" prefWidth="209.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <TextField fx:id="fromContact" prefHeight="44.0" prefWidth="209.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="319.0" text="Name :" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="319.0" text="Date" GridPane.columnIndex="4" />
+                  <DatePicker fx:id="bDate" prefHeight="34.0" prefWidth="132.0" GridPane.columnIndex="5" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="319.0" text="Address :" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="319.0" text="Contact :" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Label prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #456565;" text="Send To" textFill="WHITE" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="27.0" prefWidth="144.0" style="-fx-background-color: #456565;" text="Recive From" textFill="WHITE" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button id="btn" fx:id="submitBtn" mnemonicParsing="false" onAction="#subBooking" prefHeight="25.0" prefWidth="198.0" stylesheets="@button.css" text="Submit" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+            <TableView fx:id="bookTable" prefHeight="282.0" prefWidth="650.0">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#updateBooking" text="Update Booking" />
+                        <MenuItem mnemonicParsing="false" onAction="#deleteBooking" text="Delete Booking" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu></TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
