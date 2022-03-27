@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package courier.management;
 
 import DB.DBConnection;
@@ -28,11 +23,6 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-/**
- * FXML Controller class
- *
- * @author tanzeem
- */
 public class BookingSceneController implements Initializable {
 
     @FXML
@@ -60,12 +50,6 @@ public class BookingSceneController implements Initializable {
     private DatePicker bDate;
     @FXML
     private Button submitBtn;
-    
-    /**
-     * Initializes the controller class.
-     * @param url
-     * @param rb
-     */
     
     DisplayDatabase bookTableData =new  DisplayDatabase();
     @Override
