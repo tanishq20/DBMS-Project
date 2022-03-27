@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package courier.management;
 
 import DB.DBConnection;
@@ -33,11 +28,6 @@ import javafx.scene.layout.AnchorPane;
 import org.controlsfx.control.textfield.AutoCompletionBinding;
 import org.controlsfx.control.textfield.TextFields;
 
-/**
- * FXML Controller class
- *
- * @author tanzeem
- */
 public class SheduleSceneController implements Initializable {
 
     @FXML
@@ -54,9 +44,6 @@ public class SheduleSceneController implements Initializable {
     private TableView<?> submitTable;
    
 
-    /**
-     * Initializes the controller class.
-     */
      ObservableList<String> cList = FXCollections.observableArrayList(); 
      ObservableList<String> bList = FXCollections.observableArrayList(); 
      ObservableList<String> sList = FXCollections.observableArrayList(); 
